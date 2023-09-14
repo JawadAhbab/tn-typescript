@@ -4,11 +4,14 @@ import { ReactChild } from 'react'
 export type ObjectOf<T> = { [key: string]: T }
 export type ObjectInKeys<T extends Object, U> = { [key in keyof T]: U }
 export type ObjectInUnion<T extends string, U> = { [key in T]: U }
-export type AnyObject = ObjectOf<any>
 export type Optional<O extends {}> = { [K in keyof O]?: O[K] extends {} ? Optional<O[K]> : O[K] }
 export type OptionLess<O extends {}> = { [K in keyof O]-?: O[K] extends {} ? OptionLess<O[K]> : O[K] } // prettier-ignore
 export type OptionalShallow<O extends {}> = { [K in keyof O]?: O[K] }
 export type OptionLessShallow<O extends {}> = { [K in keyof O]-?: O[K] }
+export type AnyObject = ObjectOf<any>
+
+// CLASS
+export type AnyClass = new (...args: any[]) => any
 
 // REACT
 export type JsxElement = null | string | ReactChild
