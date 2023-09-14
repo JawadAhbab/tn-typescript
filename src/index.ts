@@ -1,4 +1,5 @@
-import { ReactChild } from 'react'
+// @ts-ignore
+import { ReactElement } from 'react'
 
 // OBJECT
 export type ObjectOf<T> = { [key: string]: T }
@@ -14,7 +15,7 @@ export type AnyObject = ObjectOf<any>
 export type AnyClass = new (...args: any[]) => any
 
 // REACT
-export type JsxElement = null | string | ReactChild
+export type JsxElement = ReactElement | string | number | null
 export type JsxElements = JsxElement | JsxElement[] | (JsxElement | JsxElement[])[]
 export type JsxComponent<P extends AnyObject = {}> = (props: P) => JsxElements
 
