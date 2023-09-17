@@ -23,3 +23,4 @@ export type JsxComponent<P extends AnyObject = {}> = (props: P) => JsxElements
 export type Nullable<T> = T | null
 export type IsEqual<T, U> = (<G>() => G extends T ? 1 : 2) extends <G>() => G extends U ? 1 : 2 ? true : false // prettier-ignore
 export type Func = () => void
+export type AsyncFunc = () => Promise<void>

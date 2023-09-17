@@ -22,3 +22,5 @@
 
 - `Nullable<T>`
 - `IsEqual<T, U>`
+- `Func`
+- `AsyncFunc`
