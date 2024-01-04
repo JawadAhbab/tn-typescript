@@ -6,7 +6,7 @@
   "main": "./src/index.ts",
   "module": "./src/index.ts",
   "scripts": {
-    "Publish": "yarn publish"
+    "publish": "yarn publish"
   },
   "author": "Turnova",
   "license": "MIT",
