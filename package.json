@@ -10,7 +10,6 @@
   },
   "author": "Turnova",
   "license": "MIT",
-  "peerDependencies": {},
   "devDependencies": {
     "typescript": "^5.2.2"
   },
